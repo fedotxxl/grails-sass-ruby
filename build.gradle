@@ -1,0 +1,22 @@
+apply plugin: 'maven'
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'src/main/ruby'
+        }
+    }
+}
+
+install {
+    repositories.mavenInstaller {
+        pom.groupId = 'io.belov.grails'
+        pom.artifactId = 'sass-compass'
+        pom.version = '0.12.2.2'
+    }
+}
