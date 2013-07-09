@@ -17,6 +17,6 @@ install {
     repositories.mavenInstaller {
         pom.groupId = 'io.belov.grails'
         pom.artifactId = 'sass-compass'
-        pom.version = '0.12.2.2'
+        pom.version = '0.12.2.2.10'
     }
 }
